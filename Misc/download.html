@@ -1,0 +1,497 @@
+
+<HTML><HEAD>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app10.us.archive.org";archive_analytics.values.server_ms=476;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<TITLE>Dave's Downloading FAQ</TITLE>
+</HEAD><BODY BGCOLOR="ffffff" BACKGROUND="/web/20120207093156im_/http://www.steelfalcon.com/Backgrounds/whiteblock.gif">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.steelfalcon.com/Misc/download.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "7";
+var displayMonth = "Feb";
+var displayYear = "2012";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.steelfalcon.com/Misc/download.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20120207093156" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20110910162750/http://www.steelfalcon.com/Misc/download.html" title="10 Sep 2011">SEP</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 9:31:56 Feb 7, 2012">FEB</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Mar
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20120201120357/http://www.steelfalcon.com/Misc/download.html" title="12:03:57 Feb 1, 2012"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 9:31:56 Feb 7, 2012">7</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20110111103556/http://steelfalcon.com/Misc/download.html" title="11 Jan 2011"><strong>2011</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 9:31:56 Feb 7, 2012">2012</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2013
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20120207093156*/http://www.steelfalcon.com/Misc/download.html" title="See a list of every capture for this URL">64 captures</a>
+           <div class="r" title="Timespan for captures of this URL">19 Feb 99 - 7 Feb 12</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:020100000100_2000:-1:000100000010_2001:-1:210201010001_2002:-1:010001000101_2003:-1:010001010001_2004:-1:010101010101_2005:-1:010000000001_2006:-1:000111010011_2007:-1:010010020101_2008:-1:010111001100_2009:-1:001010101000_2010:-1:101010010000_2011:-1:100000001000_2012:1:420000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<IMG VSPACE=2 WIDTH=100% SRC="/web/20120207093156im_/http://www.steelfalcon.com/Images/rainban.gif" ALT="------------------------"><BR>
+<TABLE WIDTH=100% BORDER><TR>
+<TD ALIGN=CENTER>
+<A HREF="/web/20120207093156/http://www.steelfalcon.com/thirdinvidwar.html">
+<IMG WIDTH=130 HEIGHT=58 BORDER=0 SRC="/web/20120207093156im_/http://www.steelfalcon.com/Images/RGFlogo.gif"></A>
+</TD><TD ALIGN=CENTER>
+<A HREF="/web/20120207093156/http://www.steelfalcon.com/macrossmecha.html">
+<IMG WIDTH=60 HEIGHT=60 BORDER=0 SRC="/web/20120207093156im_/http://www.steelfalcon.com/Images/UNicon.gif"></A>
+</TD><TD ALIGN=CENTER>
+<IMG WIDTH=60 HEIGHT=50 BORDER=0 SRC="/web/20120207093156im_/http://www.steelfalcon.com/Images/LaborIcon.gif">
+</TD><TD ALIGN=CENTER>
+<IMG WIDTH=60 HEIGHT=53 BORDER=0 SRC="/web/20120207093156im_/http://www.steelfalcon.com/Images/NERVicon.gif">
+</TD></TR>
+</TABLE>
+<P>
+<CENTER>
+<H1>DAVE'S DOWNLOADING FAQ</H1>
+<H2>or<BR><I>"How the heck do I get all this stuff??"</I></H2>
+</CENTER>
+<P>
+<IMG VSPACE=2 WIDTH=100% SRC="/web/20120207093156im_/http://www.steelfalcon.com/Images/rainban.gif" ALT="------------------------"><BR>
+<P>
+Probably the most common questions I receive via email about my web pages are
+requests for help in downloading the images or text on my pages for personal
+use.  I would love to make downloading all my stuff as easy as "point, click,
+and save" but unfortunately due to space limitations and other factors I can't
+do that.  So in order to help I've written up this general explanation page
+for all my web projects.  It probably won't answer all your questions, but
+hopefully it'll get you on the right track.
+<P>
+<H2>Printing from a Web Browser</H2>
+<P>
+The method I commonly recommend the most for people who want to download a
+copy of my stuff is to simply print the pages they're interested in from their
+web browser.  This is the method I use myself; I print the different files
+separately and then put them in a 3-hole binder for easy access.  Whenever I
+make changes or updates to something, I simply print out a new copy of that
+particular page and replace it in the binder.  This also works well during
+gaming sessions since I can make copious notes in the side bars and blank
+spaces.  Most web browsers have a built-in print feature, usually found under
+the file or system menu.  Yes, this can be a lot of work to display and print
+each page, but on the other hand you don't have to reprint the entire
+supplement when I make one minor change to a design.
+<P>
+<H2>Saving text from a Web Browser</H2>
+<P>
+If you absolutely must have an electronic copy of my stuff, the next easiest
+thing to do is to save the files to text files straight from your web browser.
+ Like printing, most web browsers have a "save" function built into them
+allowing you to save the text of a web page into a format compatible with most
+word processors.  If you're really ambitious you can also download the images
+and insert them into the word processor documents so that you have both images
+and text in a single file.  (See the section below on <B>Downloading
+Images</B>)
+<P>
+People who use a Unix system to surf the web will need to find a way to
+download the text (and/or images) from their system if they want to use them
+on their home computer.  I'm sorry, but I <B>CANNOT</B> help you with this;
+there's no possible way I can know the setup and specifics of every Unix
+system in the world.  You will probably have to transfer the files from the
+Unix system to a personal computer using an FTP (file-transfer protocol)
+client or software package.  Talk to your local system administrator or lab
+manager; they should be familiar with how to get files between PCs and
+mainframes.
+<P>
+<H2>Downloading text from <I>ftp.io.com</I></H2>
+<P>
+I do maintain a small FTP site where I try to keep some text files for people
+who want to download my stuff all at once via FTP.  This FTP site is located
+at <B>ftp.io.com</B> in the directory <B>/pub/usr/deitrich</B>.  You can
+access this site either by normal FTP or via your web browser.  To use your
+web browser to get there enter the following URL:
+<P>
+<BLOCKQUOTE>
+<A HREF="ftp://ftp.io.com/pub/usr/deitrich/">
+<B>ftp://ftp.io.com/pub/usr/deitrich/</B></A>
+</BLOCKQUOTE>
+<P>
+Once you enter the URL you should see something similar to the following
+screen.  You can go to a lower directory by clicking on the name, or download
+a file by clicking on it.  Note that some browsers may try to view a text file
+instead of download it when you click on it, in which case you will need to
+change the helper applications preferences for your browser so that it will
+save <B>.txt</B> files to disk instead of view them (check the documentation
+for your web browser).
+<P>
+<IMG WIDTH=468 HEIGHT=319 SRC="/web/20120207093156im_/http://www.steelfalcon.com/Misc/Images/nsftp.gif">
+<P>
+You can also access this site using the standard Unix FTP command.  Below is a
+demonstration of an FTP session to ftp.io.com.
+<P>
+<PRE>
+Mercury 1&gt; ftp ftp.io.com
+Connected to ft-meade.io.com.
+220 ft-meade FTP server (Version wu-2.4.2-academ[BETA-9](1) Thu Feb 29
+15:50:44 EST 1996) ready.
+Name (ftp.io.com:deitrich): anonymous
+331 Guest login ok, send your complete e-mail address as password.
+Password: user@host.domain
+230-Welcome to Illuminati Online's Anonymous FTP site.
+230 Guest login ok, access restrictions apply.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp&gt; cd /pub/usr/deitrich
+250-
+250-Welcome to Dave Deitrich's mini-FTP site!  All files in these folders
+250-belong to me, and should not be assumed to relate in ANY way to
+250-Illuminati Online.  Please mail all comments/suggestions to me at
+250-deitrich@io.com or deitrich@mcs.net.  Enjoy!
+250-
+250-
+250 CWD command successful.
+ftp&gt; ls
+200 PORT command successful.
+150 Opening ASCII mode data connection for /bin/ls.
+total 344
+drwxr-xr-x   6 1511     10           4096 Jan 21  1996 .
+drwxr-xr-x 227 root     root         8192 Jul 16 07:16 ..
+-rw-r--r--   1 1511     10            247 Sep 15  1995 .message
+drwxr-xr-x   2 1511     10           4096 Nov  9  1995 Dandelions
+drwxr-xr-x   2 1511     10           4096 Jan 20  1996 MacrossText
+-rw-rw-r--   1 1511     100        311707 Jan 21  1996 thirdinvidwar.txt
+226 Transfer complete.
+ftp&gt; cd MacrossText
+250 CWD command successful.
+ftp&gt; ls
+200 PORT command successful.
+150 Opening ASCII mode data connection for /bin/ls.
+total 268
+drwxr-xr-x   2 1511     10           4096 Jan 20  1996 .
+drwxr-xr-x   6 1511     10           4096 Jan 21  1996 ..
+-rwxr-xr-x   1 1511     10            362 Jan 20  1996 .message
+-rw-r--r--   1 1511     10          22747 Jan 20  1996 fz109-ver11.txt
+-rw-r--r--   1 1511     10          22618 Jan 20  1996 vf11-ver11.txt
+-rw-r--r--   1 1511     10          19271 Jan 20  1996 vf11fa-ver10.txt
+-rw-r--r--   1 1511     10          24821 Jan 20  1996 vf17-ver12.txt
+-rw-r--r--   1 1511     10          26212 Jan 20  1996 vf19-ver10.txt
+-rw-r--r--   1 1511     10          27415 Jan 20  1996 vf19kai-ver09.txt
+-rw-r--r--   1 1511     10          16576 Jan 20  1996 vf1s-ver16.txt
+-rw-r--r--   1 1511     10          17576 Jan 20  1996 vf4-ver11.txt
+-rw-r--r--   1 1511     10          24928 Jan 20  1996 yf19-ver14.txt
+-rw-r--r--   1 1511     10          33584 Jan 20  1996 yf21-ver12.txt
+226 Transfer complete.
+ftp&gt; get yf21-ver12.txt
+local: yf21-ver12.txt remote: yf21-ver12.txt
+200 PORT command successful.
+150 Opening BINARY mode data connection for yf21-ver12.txt (33584 bytes).
+226 Transfer complete.
+33584 bytes received in 4.9 seconds (6.7 Kbytes/s)
+ftp&gt; bye
+221 Goodbye.
+Mercury 2&gt;
+</PRE>
+<P>
+Note that if you are using a web browser or FTP client from a Unix account,
+you will also need to deal with downloading your files from the mainframe to
+your PC.  Talk to your sysadmin or lab administrator for assistance.
+<P>
+ftp.io.com also contains a text file that has all of my Third Invid War
+supplement in the form of a single text file.  This file is called <A
+HREF="ftp://ftp.io.com/pub/usr/deitrich/thirdinvidwar.txt"><B>thirdinvidwar.txt</B></A>
+and is located in the /pub/usr/deitrich directory.  I will try my best to keep
+this file updated as I make continuing changes to TIW.
+<P>
+<BLOCKQUOTE>
+<B>NOTE:</B> Images are no longer available from <B>ftp.io.com</B>.  They have 
+been removed at the request of the IO sysadmins.  If you want to download images
+from my web pages you will have to get them via the web (see below).
+</BLOCKQUOTE>
+<P>
+<H2>Capturing/Downloading Images</H2>
+<P>
+Due to space considerations I can no longer keep an archive of images
+available for anonymous FTP access.  However, I have created several web-based
+image indices for people who want to view or download the images over the web
+easily.  These indices are listed below:
+<P>
+<DL>
+<DT><B>General Web Images:</B>
+<DD><A HREF="/web/20120207093156/http://www.steelfalcon.com/Images/index.html">
+    <B>http://www.mcs.net/~deitrich/Images/index.html</B></A>
+<DT><B>General Web Backgrounds:</B>
+<DD><A HREF="/web/20120207093156/http://www.steelfalcon.com/Backgrounds/index.html">
+    <B>http://www.mcs.net/~deitrich/Backgrounds/index.html</B></A>
+<DT><B>Robotech Third Invid War Images:</B>
+<DD><A HREF="/web/20120207093156/http://www.steelfalcon.com/TIW/Images/index.html">
+    <B>http://www.mcs.net/~deitrich/TIW/Images/index.html</B></A>
+<DT><B>Southern Cross Garland RPG Stats Images:</B>
+<DD><A HREF="/web/20120207093156/http://www.steelfalcon.com/Garland/Images/index.html">
+    <B>http://www.mcs.net/~deitrich/Garland/Images/index.html</B></A>
+<DT><B>Macross Mecha Designs Images:</B>
+<DD><A HREF="/web/20120207093156/http://www.steelfalcon.com/Macross/Images/index.html">
+    <B>http://www.mcs.net/~deitrich/Macross/Images/index.html</B></A>
+<DT><B>Miscellaneous Mecha RPG Stats Images:</B>
+<DD><A HREF="/web/20120207093156/http://www.steelfalcon.com/Mecha/Images/index.html">
+    <B>http://www.mcs.net/~deitrich/Mecha/Images/index.html</B></A>
+</DL>
+<P>
+As my other projects near completion I'll add image indices for those as well.
+ Each of these links connects to an index that lists the name and a
+description of each image in that directory.  If you click on the name of the
+image, your browser should download that image for you.  For some browsers
+(Netscape in particular) you will need to modify the preferences for
+<B>.gif</B> files so that the browser will save the image instead of display
+it.  Other non-graphical browsers should automatically save the image for you.
+<P>
+Almost all my images are stored in <B>Compuserve GIF</B> (either gif87 or gif89a)
+format, so you will need a graphics program such as Photoshop, XV, or JPEGview
+to view them.  Shareware and freeware graphics viewers for a variety of
+platforms can be found at most major anonymous FTP sites such as <A
+HREF="ftp://wuarchive.wustl.edu/"><B>wuarchive.wustl.edu</B></A>.  Few word
+processor programs will read GIF formats, so you will probably need to convert
+the GIFs to another format if you want to combine them with text files (like
+<B>TIFF</B>).
+<P>
+<H2>Summary</H2>
+<P>
+Hopefully the above paragraphs will give you some ideas of where to start if
+you want to download my stuff but don't know how.  You'll probably have more
+questions as you proceed, though, and in those cases I greatly encourage you
+to talk with your local sysadmins and lab administrators.  These people are
+infinitely more qualified than me to answer your questions, because they know
+the setup and configuration of your site (which is most likely very different
+than mine).  Even if they don't know the right answers, they should at least
+be able to point you towards someone who does.  So please, talk to them first.
+<P>
+<H2>Other Frequently Asked Questions</H2>
+<P>
+<OL>
+<LI><I>Hey, that new file you just put up isn't at <B>ftp.io.com</B>!  What's
+up?</I>
+<P>
+I do most of my web work at night or on weekends.  Occasionally I get tired
+and forget to update the files at <B>io.com</B>.  Just let me know what files
+are missing and I'll correct it when I get a chance.
+<P>
+<LI><I>Can you put together one Microsoft Word or WordPerfect file with all
+the text and images in it and put it on <B>io.com</B> so that we can download
+everything at once?</I>
+<P>
+Not at this time, sorry.  First off, I don't have time to put such a file
+together, and second, I don't have the disk space to store such a file (which
+would be multi-megabytes in size).  If one of you has the time and space for
+maintaining such a file let me know and I'll be glad to help out any way I
+can.
+<P>
+<LI><I>Are you ever going to publish your stuff in a book and make it
+available publicly?</I>
+<P>
+Probably not.  Printing copies of my stuff and then selling them is like
+publicly asking to be sued by other RPG companies for copyright infringement. 
+Maybe after everything's done I'll approach the companies and see if they're
+interested.
+</OL>
+<P>
+If you have other comments or questions please feel free to contact me at <A
+HREF="mailto:deitrich@mcs.net"><B>deitrich@mcs.net</B></A>, or use the button
+below.  Take it easy!
+<P>
+<CENTER>
+<A HREF="mailto:deitrich@mcs.net"><IMG WIDTH=247 HEIGHT=84
+SRC="/web/20120207093156im_/http://www.steelfalcon.com/Images/send_comments.gif" ALT="Click Here to Send Comments"></A>
+</CENTER>
+<P>
+<TABLE BORDER WIDTH=100%><TR><TD ALIGN=CENTER>
+<A HREF="/web/20120207093156/http://www.mcs.net/~deitrich/index.html"><B>DAVE'S INDEX O' PAGES</B></A>
+</TD><TD ALIGN=CENTER>
+<A HREF="/web/20120207093156/http://www.mcs.net/~deitrich/WWW/links.html"><B>DAVE'S LIST O' LINKS</B></A>
+</TD></TR></TABLE>
+<P>
+<IMG VSPACE=2 WIDTH=100% SRC="/web/20120207093156im_/http://www.steelfalcon.com/Images/rainban.gif" ALT="------------------------"><BR>
+<TABLE WIDTH=100%><TR>
+<TD>
+<IMG SRC="/web/20120207093156im_/http://www.steelfalcon.com/Images/name2.gif" ALT="DAVE DEITRICH" WIDTH="242" HEIGHT="23"><BR>
+<A HREF="/web/20120207093156/http://www.steelfalcon.com/index.html"><B>http://www.mcs.net/~deitrich/index.html</B></A><BR>
+<A HREF="mailto:deitrich@mcs.net"><B>deitrich@mcs.net</B></A></TD>
+<TD ALIGN=right VALIGN=top><H5>Last Updated: December 28, 1997</H5></TD>
+</TR></TABLE>
+
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="/web/20120207093156js_/http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="/web/20120207093156im_/http://visit.webhosting.yahoo.com/visit.gif?us1328607117" alt="setstats" border="0" width="1" height="1"></noscript>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 9:31:56 Feb 7, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:16:12 May 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

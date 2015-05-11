@@ -1,0 +1,1836 @@
+<HTML><HEAD>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=91;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<TITLE>THE REUNION: A TIW Short Story</TITLE>
+</HEAD><BODY>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.steelfalcon.com/TIW/reunion.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "1";
+var displayMonth = "Feb";
+var displayYear = "2012";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.steelfalcon.com/TIW/reunion.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20120201115541" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20110910153012/http://www.steelfalcon.com/TIW/reunion.html" title="10 Sep 2011">SEP</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 11:55:41 Feb 1, 2012">FEB</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Mar
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20120131210828/http://www.steelfalcon.com/TIW/reunion.html" title="21:08:28 Jan 31, 2012"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 11:55:41 Feb 1, 2012">1</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20110111094556/http://steelfalcon.com/TIW/reunion.html" title="11 Jan 2011"><strong>2011</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 11:55:41 Feb 1, 2012">2012</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2013
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20120201115541*/http://www.steelfalcon.com/TIW/reunion.html" title="See a list of every capture for this URL">59 captures</a>
+           <div class="r" title="Timespan for captures of this URL">23 Aug 00 - 1 Feb 12</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000010002_2001:-1:100201010000_2002:-1:000100010101_2003:-1:010001010000_2004:-1:010101010101_2005:-1:011100001001_2006:-1:100011000016_2007:-1:600010010101_2008:-1:000111001000_2009:-1:001000100000_2010:-1:000000000000_2011:-1:100000001000_2012:1:410000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<IMG SRC="./Images/navbar-reunion.gif" 
+ ALT="THIRD INVID WAR: THE REUNION" 
+ ALIGN=left WIDTH=383 HEIGHT=20 BORDER=0 VSPACE=0 HSPACE=0>
+<IMG SRC="Images/navbar-end.gif" 
+ ALT="Next  Previous  Top  Index" USEMAP="#navmap"
+ ALIGN=right WIDTH=203 HEIGHT=20 BORDER=0 VSPACE=0 HSPACE=0>
+<IMG SRC="Images/navbar-filler.gif" 
+ WIDTH=100% HEIGHT=20 BORDER=0 VPSACE=0 HSPACE=0>
+<BR CLEAR=all>
+<FONT SIZE=1>
+<B>NOTE:</B> This story is based in the post-Robotech future timeline of <B>
+<A HREF="/thirdinvidwar.html">The Third Invid War</A></B>, a supplement created 
+by <A HREF="/index.html">Dave Deitrich</A> and <A 
+HREF="/web/20120201115541/http://www.eyrie.org/~robotech/index.html">Chris Meadows</A>
+to the Palladium Robotech role-playing games.  As such, it is only a 
+"possible" or potential future to the Robotech series and should not be an 
+impediment to the creation of other possible futures after the end of the 
+series as stated in the show.
+</FONT>
+<P>
+<FONT SIZE=1>
+<B>ROBOTECH</B> is the property of and copyrighted by Harmony Gold, whoever 
+else, blah blah blah, and the Palladium RPG games are the property of and 
+copyrighted by Kevin Siembeida and Palladium as well as Harmony Gold.  <B>The
+Third Invid War</B> is the creation of Dave Deitrich and Chris Meadows, and 
+is strictly a not for profit RPG fan supplement, so the above two 
+organizations don't go after them.  Likewise, this fanfiction is also not for 
+profit, so the above two organizations don't go after me.   None of the 
+events or persons contained within this fanfiction are meant to have any 
+relation to existing persons, organizations, or events, and any resemblance 
+is completely coincidental.  If you think otherwise, that's your problem, 
+not mine. ^_^  Music quotes and lyrics are likewise copyrighted to their 
+respective creators. 
+</FONT>
+<P>
+<FONT SIZE=1>
+<B>UNDER NO MEANS</B> is this fanfiction to be copied for personal profit.  
+I have nothing at all against copying the work for public enjoyment--in fact 
+I'd be honored--but for somebody to make money off this I will not tolerate.  
+If I find out somebody is profiting off this without my knowledge, not only 
+will I sic the law on 'em, but I'll sic Harmony Gold on 'em too.  On top of 
+that, I'll do my damndest to have them flayed alive, hung by the ankles in a 
+saline bath, quartered, and then finally flung into that pit with that 
+thingy--what was it?  The big mouth thing in Return of the Jedi.  Oh yeah, 
+the Sarlacc.  Flung into the Sarlacc to suffer in digestive agony for a 
+millennium or two.  Sounds extreme, but death'll be too good for them.  Any 
+bits left over I'll ship to the Kulagi to experiment on.  If I can't profit 
+off of this because of copyright laws, sure as hell nobody else will be able 
+to either.  Enough ranting on that.  ^_^
+</FONT>
+<P>
+<HR>
+<P>
+<CENTER>
+<FONT SIZE=7><B>T</B></FONT><FONT SIZE=6><B>HE</B></FONT>
+<FONT SIZE=7><B>R</B></FONT><FONT SIZE=6><B>EUNION</B></FONT>
+<P>
+<H3>A Story of<BR> the 
+<A HREF="/thirdinvidwar.html">Third Invid War</A>
+by<P></H3>
+<H2>Amy Borden</H2>
+</CENTER>
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+The Attack Scout plummeted.
+<P>
+One claw lashed out, attempting to gut the figure harrying it in midair.  The
+attacker side-slipped, its jets roaring, and then dropped for the ground, some
+five hundred feet away.  The Scout, employing its simple rationale of attack
+and pursuit, followed, seemingly pinning the harrier between it and its
+sibling scout roaring up to deal with the armored, flying gadfly.
+<P>
+The Invid Attack Scout never came in patrols of less than three mecha. 
+However, the third, having been precipitately made into shards of alloy and
+atomized plasma by a well-placed GR missile, was currently decorating several
+hundred square feet of landscape and was in no further condition to fight.
+<P>
+The rising Scout's plasma cannons began to glow.  At that moment, the object
+it intended to blaze into free elements was abruptly no longer there.
+<P>
+The VR-135 battlesuit gunned to full power, squirting out through the
+converging mecha like a grapeseed.  The plasma blasts, instead of obliterating
+it, were unleashed on its own patrolmate.
+<P>
+The Invid pilot's wailing deathscream was heard by the other Scout's mind for
+only a second before the Scout was turned into a hail of raining ceramic
+debris.  The remaining Scout whipped up through the remnants of the blast,
+charring its armor as it flipped through the air, temporarily unmade by the
+telempathatic sensations of the other Invid's destruction.
+<P>
+Above it, the occupant of the Cyclone armor hovered, one arm tracking it with
+remorseless precision.  It was only a matter of a couple seconds before the
+Scout recovered its senses and whipped back toward the mecha-clad human
+figure, single-mindedly intent on the obliteration of its companion's killer. 
+
+<P>
+The vulnerable sensor eye of the mecha became open for only the fraction of a
+second, but it was long enough for the Forager pilot.
+<P>
+The blast spat home, hammering through crystal, flesh, blood and alloy.
+<P>
+For the eighty-fourth time since 2039 Sera, former Princess Royal of the
+Invid, killed her own kind.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+The sun had worked its way significantly further west before a figure appeared
+on the dirt track leading into a collection of accumulated clapboard, plywood,
+old mecha plating and occasional sound construction housing three or so dozen
+human souls.
+<P>
+It was wheeling an olive-drab patterned vehicle that looked to the untrained
+eye like a motorcycle of the last century, and was walled off from the outer
+world by armor plating and helmet of the same shade.  It was obviously not
+enjoying the experience; the slender figure's steps dragged and in the summery
+heat a fine rain of sweat was dripping off its hands and neck, spattering the
+red Arkansas dust with dark, bloody splotches in its wake.  Behind the cycle,
+several bundles hunched in the capacious carriers attached to the back.
+<P>
+Slowly, as if reluctant to relinquish its momentum, the figure stopped and
+looked at the vista before it, sighing from underneath the lowered visor of
+its helmet.
+<P>
+"Water?" it asked of no one in particular.
+<P>
+It crossed some intangible line into the area, and it abruptly gained
+attention from numerous eyes within the shacks, eating their sparse dinners
+and trying to hide from the sun's lowering hammer.  There was some movement.
+<P>
+A scrawny dog paced the trudging alloy boots of the newcomer, waiting for a
+moment's opening to lift its leg on the pristine wheels of the vehicle, but
+then lost hope as the armored figure pushing it resumed its metronome trudge
+further into the hamlet.
+<P>
+Here, there was some more activity, particularly around a rare brick building
+that in some obscure way immediately identified itself as a bar.
+<P>
+The figure stopped, its posture picking up for a brief second, then wheeled
+itself over.  After proceeding to install the necessary anti-theft
+precautions, the cycle's owner seemed to brace itself, and reached hands up to
+remove the helmet.
+<P>
+Drops literally flew as it shook its head like a dog upon slurping the helmet
+off its soaked hair, and then the head resolved itself.  
+<P>
+The hair was brown, brushing the shoulders, and even laden with sweat had a
+tendency to style itself into an odd upsweep at the end.  Inexplicably,
+something about the hairstyle indicated that it was completely natural and not
+any concession to vanity.  However, the glimpses of suspicious brown stains on
+forehead and cheeks attested to otherwise for its color.  
+<P>
+The person underneath it sighed in relief, then fumbled around until it found
+a pair of sunglasses. Slipping on the slightly scratched lenses, the figure
+heaved another sigh of relief, and then lifted its face to the pitiless
+yellowing gaze of Sol.
+<P>
+Underneath the glasses, the face was oval and indisputably female, as was the
+slender body that clumsily fumbled out of its torso armor and forearm shields
+and dripped all over the ground even despite the CVR bodysuit.  An H-90
+Gallant was produced with the intention of caution.  Then, after the upper
+half of the CVR was secured to the bike, the young woman squared her shoulders
+again and walked inside.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"You want who?"  The bartender used his rag to wipe perspiration off of his
+forehead and looked at the entrant dubiously before using the same rag to wipe
+the bar.  She looked down with a lip slightly curled in disgust.  She was also
+being considered to various degrees of lust, curiosity, boredom, and hostility
+by the three or four other patrons that had decided to brave the airless heat
+of the interior.  She knew it, and didn't like it very much, but the obvious
+questioning couldn't be helped.  In her time on the road, she had discovered
+the common drinking establishment was the single best means of getting gossip.
+<P>
+Sighing, she began to explain again.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"Thank you so very much," the grateful mother beamed.  The little boy
+sniffled, his tears lessening as the anaesthetic kicked in.  He had protested
+in ear-piercing terms against the lancing of his foot to drain the infection
+that had come on the heels of cutting his instep with a broken bottle.  Only
+now was he beginning to realize that the week-old hurt felt better.
+<P>
+The medic smiled as she found a clean piece of gauze and began to wrap the
+small appendage. "You don't need to thank me.  Just make sure he doesn't walk
+around on that foot for a couple of days, and use the antiseptic and
+antibiotic I gave you.  You're very lucky it wasn't any worse."  The other
+woman nodded fervently, remembering her son had refused to let her know he had
+been walking around barefoot in the road until the pain was too great.
+<P>
+After mother and child left, the remaining woman's shoulders sagged, the heat
+inside oppressive even with the wheezing help of the twenty-year-old fan
+sitting in the small room.  Making a face, she began to clean up her ad hoc
+operation--it had been a messy business--and thought longingly of showers. 
+Nice cool showers, with a lot of water, enough to last a week.  She cut off
+that train of thought when the logistics got too impossible.
+<P>
+When done, she raked wisps of dark red hair out of her face and thought about
+redoing the french braid that seemed to be coming undone as she wandered from
+the room into the darkening main room of her place in the village's only
+boarding house.  She knew full well she was one of the more fortunate dwellers
+in the place, but it still felt like a furnace.  Maybe she could get away with
+opening a few windows and the door...
+<P>
+She had to fight one open, grunting against a couple years worth of rust. 
+Exhausted, she moved to the door, carrying a brick with her as she did to prop
+it open.
+<P>
+She squealed the door open, and the brick dropped onto the wooden floor with a
+boom from her nerveless fingers.
+<P>
+"I have this tendency to arrive when you least want it, don't I?" the newcomer
+in the entrance asked wearily.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"What?" the medic asked blankly.  "Am I hearing right?"
+<P>
+The figure seated opposite her at her tiny table sighed.  "If you mean that I
+said that it's vitally important that you come with me, yes I said that.  I
+know it sounds ridiculous, but yes, I did say that."
+<P>
+"It sounds ridiculous.  I'll grant that."
+<P>
+The other sighed again.  "Why do you think I covered more than a hundred miles
+in three days?  A--Marlene, I truly think your life is in serious danger."
+<P>
+"It's very nice you finally remembered my name, Sera, but as I recall a few
+years ago you also thought it was vitally important to save me from myself." 
+Marlene's tone was dry, but she regretted it as soon as she saw the partially
+armored figure wince.
+<P>
+"It backfired, didn't it?"  Sera surveyed her lap.  Marlene gave her the grace
+of not answering the rhetorical question.  
+<P>
+"Sera, I haven't seen anyone I've known for three years now until you, and I
+haven't done anything to attract attention.  I've been doing what I can to
+help people, but I've done nothing to directly fight them. Are you certain?"
+<P>
+The other woman sighed.  "Can I remove these filthy glasses?  I can't see in
+here."  When Marlene nodded, the other brought up her hands took the tinted
+lenses off, blinked, and rubbed her eyes.
+<P>
+The uncovered eyes that looked back up were the color of new rubies, a color
+that suggested an overexposed photograph but was the actual pigment of the
+iris.  Somehow, it did not look demonic on her. It was not a color that had
+ever been in the Terran gene pool.
+<P>
+She looks terrible, Marlene thought.  Although Sera retained the appearance of
+an athletic human female in her early twenties, the years of war since the
+second Invid occupation had taken their toll.  While she retained her exotic,
+otherworldly beauty, it was blurred and worn.  The eyes were puffed with
+fatigue and not near enough sleep, and there were fine lines evident around
+her eyes and mouth that no aging had carved.  
+<P>
+She had the hunted look that was the communal expression of every resistance
+fighter these days; it was impossible to resent her sudden appearance when
+Marlene knew Sera had embraced the very agenda she had once tried to repress.
+<P>
+And furthermore, she seemed completely sincere.
+<P>
+"I swear, Sera, I've done nothing to get the Invid after me.  Are you
+suggesting that I should just drop everything and follow you on some wild
+goose chase so I can get shot at by Attack Scouts?  What if it's only a false
+alarm of yours?"
+<P>
+The red eyes flashed.
+<P>
+"Face it, Marlene.  How many times in the past couple years has the Invid
+followed you?  Any patterns of attacks or Invid mecha in your path?"
+<P>
+Marlene's eyes went wide.  There was a knowing nod from the other.
+<P>
+"I thought it was only me,"  Marlene said weakly.
+<P>
+Sera shook her head.  "Don't think so.  I've had my share of encounters.  Do
+the locals know what you are?"
+<P>
+Marlene shook her head.  Sera looked over, and her features softened.
+<P>
+"Ariel, I know how much you want to forget, to ignore that portion of
+yourself.  But you can't.  The Invid won't.  And you may cause perfectly
+innocent people to suffer for it.
+<P>
+"I have a great deal of reason to think that the Invid are past just ignoring
+us even if we leave well alone.  In the past year or so--attacks followed me
+wherever I went.  It was months before I realized it was systematic.  I've
+been on the run for more than a year now.  And I don't think you ought to risk
+the lives of these people gambling.  But--it's your choice.  I just thought
+you should have known."
+<P>
+The other woman's soft brown eyes glanced down.
+<P>
+"I've--wandered a lot, Sera.  And occasionally--there were close calls.  I
+suppose--I was trying to ignore the facts--I'm very good at doing that, you
+know."
+<P>
+Sera looked at her, then shook her head.  "You're not the only one, Ariel."
+<P>
+The fragilely lovely face framed by the deep copper hair stiffened, eyes
+wounded.
+<P>
+"Sera," she said with finality, "my name is Marlene."
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"I still don't know why I'm doing this."
+<P>
+"Because you know that for once I'm right, that's why.  Plus nobody wants to
+be responsible for a massacre."  Sera took out the harshness of the words with
+a self-deprecating chuckle pitched above the rumble of her Forager Cyclone. 
+She'd removed her helmet to take advantage of the wind of their passage, and
+her dyed hair, washed and dried, whipped in the wind.  Sera had grown it a lot
+since the beginning of the war, but somehow, Marlene was tickled to admit, it
+resolutely kept to the upsweep of Sera's old hair length to what degree it
+could.  Marlene, arms around her waist, could see at least half a centimeter
+of light green at the roots. 
+<P>
+The air in her face below the protective goggles felt like the heat from an
+oven.  Even though it was at least ninety degrees Fahrenheit in the humming
+Arkansas countryside, she wore the old orange jacket given to her by Rook
+Bartley years ago in order to protect herself from the bugs and nettles that
+whipped into them as they roared through the scrubby meadows and flying red
+dust of high summer.
+<P>
+They were now several hours out from where they had met.  Somehow, Sera had
+convinced her; after Sera had thankfully accepted a cold bath and dinner, and
+a fitful sleep in the hot, sticky darkness (the single thing Marlene was
+grateful to her genes for was that mosquitoes somehow knew Invid blood wasn't
+useful), Marlene had quietly packed what useful belongings she could take in
+the predawn and stowed them in the VR-135's carrier.  The rest she had written
+a note for and left on the table, hopefully delegating her belongings among
+those of the village that needed them the most.
+<P>
+And now, here they were.  She tried to lick grit from her teeth and not think
+about the memories conjured up by Sera's sudden appearance on her doorstep.
+<P>
+They hadn't spoken much, and Marlene suspected Sera was feeling guilty about
+disrupting her peace.   In an effort to start conversation, Marlene ticked
+over numerous topics, forcing a compromise between what she really wanted to
+find out and the possibility of hurting Sera's feelings.
+<P>
+"Sera--do you know how Lunk and Annie are doing?" she shouted.
+<P>
+The other woman startled.  "What?"  Then it sank in, and she began to chuckle.
+ "Oh, them.   Well, when I last saw them, they were still very much alive, and
+that was about a year ago.  When did you see them last?"
+<P>
+"Three years.  I went off on my own when they wanted to work more closely with
+the resistance.  I figured I might put them--at risk.  I'm not very good at
+fighting."
+<P>
+She could feel Sera's grin.  "Well, you ought to know Lunk's done a fine job
+of regaining his self-respect.  Mostly thanks to me reaching up and hanging
+from his collar while screaming in his face that he hadn't much to go on,
+considering I was doing precisely the same thing he was and I had some
+embarrassing personal questions to ask myself on top of it.  That, and Annie
+was doing a share with me, playing little sister and all."  Sera's voice
+turned as thoughtful as it could over the engine noise.  "You know, she's
+really fairly attractive as an adult, as humans go.  Plus, she's a good
+rabble-rouser.  I suspect that's part of the reason we had to split up.  We
+were just too tempting a target to the loyalists."
+<P>
+"Well, Annie was always good at running her mouth," Marlene conceded, getting
+another laugh from the front seat.
+<P>
+"And flinging snowballs.  Never have let her live that down ever since.  As
+for anyone else...
+<P>
+"Rook and Rand--rumors only.  Ever since that business with Kosmas, may his
+hide be flayed in his Hell, I haven't seen anything of those two.  I
+understand , though, that that explosion marked Rook up.  She--WE--were lucky
+to get out alive, and that's the plain fact.
+<P>
+"That's discounting the--ungh"  the Cyclone lumped over a ravine--causing a
+terrified scream from Marlene-- "fact that the Invid methods..."  She trailed
+off.
+<P>
+"The Invid methods?"
+<P>
+"A sudden taste for randomly attacking towns.  Unsettling types of mecha. 
+Actively consorting with humans and using them as mercenaries.  I could go
+into an entire list, Ariel--"
+<P>
+"Marlene."
+<P>
+"That's not the behavior I know, and you know that I ought to know."
+<P>
+"Sera."  The other woman's head nodded.  "Tell me--you haven't felt her
+either.  Have you?"
+<P>
+There was a lengthy silence, as they jounced on.
+<P>
+"No," the once-Princess of the Invid admitted.  "No I haven't.  In the whole
+six years, I haven't felt the Regis."
+<P>
+Marlene didn't elaborate on the staggering pain she felt when she attempted to
+find the Invid collective mind, which made it near impossible for her to find
+out that fact.
+<P>
+It wasn't that she still rejected the fact she had come to awareness
+full-grown and nude in a wrecked house, completely ignorant that she was the
+very race and blood she was taught to fear--although that was certainly part
+of it.  It was that she simply could not do it without experiencing tortures
+she would not have visited on anyone, regardless of race.   
+<P>
+Sera had once posited that the precipitateness of the birth of the Invid
+Simulagent Ariel had had something to do with the telltale seizures she had
+experienced when Invid came near.  It was possible that the ability that
+allowed an individual Invid to act as a portion of the whole Invid was damaged
+as she'd come to life.  Somehow, the ability to detect others of the race had
+not only been shoved perpetually open, but was so malformed, the act of
+hearing Invid thoughts was like an intolerable noise.
+<P>
+Ever since then, the presence of Invid telepathic output literally sent
+Marlene to her knees in agony
+<P>
+Sometimes, she wondered if what she had accomplished in the skies above Reflex
+Point had been the act of a woman driven to the edge of desperation and
+beyond, or perhaps just an illusion.  Never since had she been able to
+duplicate that act.   And nor had she wanted to.  Doing something so patently
+inhuman had robbed her of the man she had come to love, perhaps forever.
+<P>
+<I>Scott...</I>  Marlene thought, the word a lament.
+<P>
+"No, I haven't,"  Sera repeated as though to herself.  "Whatever part She has
+in the current occupation, She is not doing it directly.  And I haven't the
+faintest idea who or what is actually coordinating the Invid."  She trailed
+off.  "But whomever has control is...uncommonly good at... locating the
+rebels."
+<P>
+"Have you felt anything, Sera?"
+<P>
+The dyed head shook.  "Not...as such."
+<P>
+"As such?"
+<P>
+"Nothing more than the others."
+<P>
+"The White Rose?"  Sera snorted at the name.
+<P>
+"Whichever Sulagi coined that term read a little too much Earth history. 
+Probably that Kayagh character over in Illinois.  But yes.  The renegades."
+<P>
+"Nothing more than..."
+<P>
+"What you probably know.  We'd know the Queen-Mother from a parsec off. 
+What's running things....isn't her.  There's no single individual.  But the
+glimpses I sometimes get, late at night, in bed..." Sera's voice faltered, and
+a shiver transmitted itself to the red-headed woman even through Sera's combat
+armor and the Cyclone's jouncing, "are wrong."
+<P>
+"I know, Sera.  Trust me, I know already."
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+Sera chewed on the biscuit, her eyebrows jumping up.
+<P>
+"These are pretty good.  I didn't know you'd learned to cook."
+<P>
+"I did.  It helps with getting things if people like what goods you have to
+make."  Marlene tucked up her legs underneath her, her eyes surveying the
+scene they were in.  In the intervening time, they had come north, for no
+other reason than it had been the direction Sera had been going in when she
+had picked up Marlene.  Besides, the high rolling hills made it difficult for
+Invid sensors to penetrate.
+<P>
+Sera grunted, licking crumbs off her fingers.  "Good for you.  Lunk can cook,
+Rook could cook, even RAND of all people could cook.  I never seemed to get
+the knack.  I thought it was a human thing.  Did marvels on making edible
+things metamorphosize into carbon, but other than that..."  Sera shrugged,
+scarlet eyes twinkling.  "At least you can.  I'd probably starve otherwise."
+<P>
+Marlene smiled, letting her dust-laden hair down in order to brush the worst
+of the dirt out and to rebraid it more neatly.  She then sombered, her serious
+face still pale underneath a superficial tan.  "Sera, where are we going now?"
+<P>
+The ex-princess did not answer for a minute or so.  "I...really haven't
+thought of that just yet.  I think I had in the back of my mind a stay with a
+resistance group up north called the James Gang.  They'd be able to house us
+for a few days or so.  But after that..."  Sera trailed off, seeing Marlene's
+glare.
+<P>
+"So do you mean we'll have to wander around scared of the Invid for whatever
+period it takes until they get tired of it, if ever?"  Marlene asked,
+incredulous.  "I'd rather wait for them with a roof over my head. I've had too
+much running in my life..."  
+<P>
+"Maybe we could find a group--one that's so securely ensconced that you and I
+could stay there for a long time.  The area north of here, up by the
+Mississippi, is hollow with caves..."  Sera fumbled.  "As I know, humans in
+areas like that are very difficult to find."  Sera poured some of her water
+supply into a collapsible cup.  "Certainly a couple Sulagi can hide too.  If
+they'll take us.  Perhaps...but what if we draw too much attention from the
+loyalists?"
+<P>
+"Maybe--maybe that's why, Sera.  Maybe..."  Marlene looked off into the middle
+distance, her knuckles rising to her lips.  "Sera--do you know what we are?"
+<P>
+"Ariel, I've been asking that question for the better part of the decade. 
+Charles Darwin would have a fit with us."
+<P>
+"Marlene!" the simulagent snapped, waving a hand in frustration.  "No, no,
+Sera!  What WE are. What we represent to the resistance.  To the population as
+a whole.  Us two."
+<P>
+The other Sulagi stared at her, her eyes wide.  "Spirit of Light...that's
+right.  What we are."
+<P>
+"We're symbols, Sera."
+<P>
+The Invid nodded blankly.  "We're symbols.  We're proof we can transcend
+prejudices.  That Human and Invid can...cooperate.  Because of what we did
+during the last occupation...and this one...we've become a rallying point for
+the entire resistance movement."  Sera's hands were trembling as she folded
+them around her cup.  "What do you want to suppose that we're the single
+biggest reason so many other Sulagi defected?"  Her eyes closed.    "And what
+do you do to something that powerful a rallying point if it gets in your way? 
+You eliminate it."  Her voice shook.  "I had years to think that.  Why did I
+never?"
+<P>
+Marlene looked solemnly at her.  "For the same reason I refused to believe I
+wasn't like my friends, until I saw the evidence on my fingers, Sera.  It's
+that simple."
+<P>
+They sat for a while, Sera trying to absorb the information.
+<P>
+Marlene looked on, knowing that amid the numerous hurts Sera was already
+suffering, one was still open and bleeding; not just the fact Sera had become
+fratricide and traitor to her kind, not just the constant grind of fear, not
+the burden of this new knowledge.  She was willing to touch on all that, but
+the biggest pain hurt too much to get near.
+<P>
+Not once had Sera mentioned Lancer.
+<P>
+Marlene rubbed her temples, trying to eliminate the ugly dull throb there all
+this was giving her.
+<P>
+It was an exceptionally nasty specimen, thanks to all the moral thought going
+on, and getting worse too.  In fact, it almost felt like...
+<P>
+She groaned, and then wailed as she clutched her head, doubling over.
+<P>
+Sera was already up.  "Ariel!  What..."
+<P>
+"Get the Cyclone!  QUICK!" the simulagent choked out.  Had she been capable of
+going any paler, Sera would have.  In two seconds flat, she was helmeted and
+on the mecha, dragging Marlene after her.
+<P>
+Never before had Sera been so glad that the Forager was capable of running on
+fusion; the engines came alive and the two women were rocketed away from their
+stopping point, spurting a cloud of ocher dust behind.  
+<P>
+Marlene gritted her teeth against the agony of the Invid hivesong so hard that
+a small trickle of green appeared on an otherwise perfectly human lip as the
+Cyclone jarred over stones and slashed through underbrush, the armor on Sera
+sparing Marlene the worst of the branch-whipping, but raising welts all the
+same.  
+<P>
+Sera for her own part concentrated on nothing but clean, pure intent; the
+sheer strength of emotional thought sometimes involuntarily gave her position
+away to patrols.  As she was, there was nothing for the Invid to latch on even
+had it or they been able to telepathically find the Sulagi's thoughts without
+her consent.  Lancer had taught her well...
+<P>
+Pain there.  She brutally shoved the memory of him aside and twisted the gas
+handle.  Marlene's arms around her tightened as the mecha leapt like a fish
+down an embankment.
+<P>
+Behind them, a tree erupted into ash and flames, and an Attack Scout plummeted
+through.
+<P>
+Sera gritted her teeth.  No hope for it now...
+<P>
+"Get off!" she shouted at her passenger, and activated the protoculture
+engines.
+<P>
+Sera slowed for a fraction of a second, and Marlene leapt.
+<P>
+She landed hard, knocking the wind out, her hand scraped, her body bruised
+from the rock she'd partially landed on, but otherwise unharmed.  She rolled
+into the underbrush as the other two Scouts of the detachment whipped past
+with a slap of hot wind, their entire attention on the allure of Sera's
+protoculture output.
+<P>
+Sera was already several hundred yards away, with enough clearance, and she
+flipped on the transmode switch.
+<P>
+She lurched into the air: the lightning reflexes of a chosen daughter of the
+Regis and alteration to the Forager's mechamorph controls enabled the
+motorcycle to shift and enfold the humanoid Invid's form in only
+two-and-a-half seconds instead of the usual five.  It was barely in time; the
+Cyclone battloid shot upward as the Scout blasted through the area where she
+had been, the plasma cannons siding its eye roaring.  Its brethren followed
+and blasted past, folded in attack configuration.  They whipped past the
+Cyclone, than began to turn back toward it, evidently intending to catch Sera
+in between them.
+<P>
+Sera snorted in detached contempt.  Did they never learn?  Of course, they
+were only iigaari...
+<P>
+The last Scout most likely did not anticipate Sera's actual blasting for it at
+the last moment. Fumbling, it reached up a claw to protect its vulnerable eye,
+but the GR missile had already found its mark. A spurt of foul-smelling
+emerald blood, a last telepathic cry, and the mecha obliged gravity, erupting
+in a lurid fireball as it impacted the ground.
+<P>
+The others were marginally cleverer; they broke off their run and spun away,
+seeming to slow with distance.  Then, imperceptibly, their speed picked up as
+they completed their arc and began to come back at her.
+<P>
+"Kara YAR!"  Sera growled, and gunned her jets.  Although she did not notice
+it, her cheeks were slick with her tears.
+<P>
+Below, Marlene rubbed at the dark green droplets beading where her skin had
+torn, beads of sweat trickling down her high forehead as she tried to cope
+with the intolerable shrilling in her head.
+<P>
+Sera twisted around, matador to a pair of surrealistic bulls, as the Attack
+Scouts slashed by so close the impact of their passing was like a body blow. 
+Grunting from the slap of air, she gunned the rockets and shot up, the ground
+whirling crazily below like a vast lumpy carousel.  
+<P>
+Somehow, the Scouts' simple minds were still convinced their tearing speed
+could deal with their tormentor; the reality was that their inertia kept them
+from achieving the same maneuverability as the far slower Cyclone.  The
+balance of abilities kept either side from scoring an actual hit.  Sera knew
+that she was able to deal with the next few passes if their tactics didn't
+change but once she got tired, one slip, and she would probably be joining her
+twin in whatever unlovely afterlife there was for their chimerical kind.  And
+considering her late brother and her recent lifestyle choices, meeting Corg
+was something she definitely could put off.
+<P>
+She had no realistic resort except to use a tactic that she hated above all
+words.  It almost always worked--but the filthiness she felt afterward almost
+made her wonder whether it was worth it.
+<P>
+The Scouts had circled back for another run at her.  Taking in a breath, she
+concentrated.
+<P>
+One jerked in shock, wavering in flight.  It had been happily concentrating on
+obliterating a human in human mecha; the last thing it had expected was a
+member of the Royals, out of nowhere, telepathically ordering otherwise. 
+While it tried to cope with the conflicting information and was in its way
+struggling with the reasons why this might be, its attention momentarily left
+the hovering Cyclone Battloid.  That confusion transmitted some of itself to
+its mate via the hive-bond, which similarly drew its focus..
+<P>
+They had a very short time to deliberate.
+<P>
+Two explosions roared through the Southern countryside, and the discussion
+ended.   Below, Marlene sighed in overwhelming relief, as peace renewed its
+hold in her skull.
+<P>
+Sera looked on the raining pieces of her kindred, clammy-skinned and
+nauseated.
+<P>
+<I>Eighty-five.  Eighty-six.  Eighty-seven...</I>
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+Marlene ran up to the Battloid as it lit on the ground and peeled away,
+revealing a sagging figure within.  Sera bent down and quickly shut off the
+Protoculture radiation to prevent it from attracting other patrols, then
+folded, gasping from the adrenalin drop after the skirmish.  
+<P>
+"Sera!  Are you..."  
+<P>
+"I'm fine.  I'm fine," Sera said blankly, her eyes glazed, the interior of her
+own mind telling her another story.  Her coverall and hair was wringing wet,
+and she shivered as the last of the battle-fever dribbled away to be replaced
+by exhaustion.  "We've got to move before too long...but...I have to...rest. 
+Just a second."  With shaking fingers, she removed her armor.  "Probably need
+to get the things back at the stop site, wherever that is..."  
+<P>
+"We have to move."
+<P>
+"Not just yet, Ariel."
+<P>
+"Mar<I>LEEEENNEE!"</I> the simualgent screeched, her patience exhausted.  Sera
+winced.
+<P>
+"Ooops.  They didn't send anything back to the hive, and patrols are pretty
+infrequent in areas like this.  Please."   The armored boots came off next, as
+Sera ignored Marlene's indignant look.  Mother, she was too Human by far--how
+would she be able to understand what Sera had done to save their lives was
+like bathing her insides in filth...  Protected only by a dull-green jumpsuit
+and a light pair of shoes, Sera began to stave off cramps by walking around
+like a colicky horse.  Her steps were slow, mechanical.
+<P>
+Despite herself, Sera was deeply grateful that Marlene's lover had executed
+their brother above Reflex Point.   Corg would have had such a field day
+gloating over how far Sera had sunk she'd probably have murdered the
+Motherless bastard herself.
+<P>
+There was a sudden thin sound, as a sharp pain shot up into Sera's calf. 
+Half-dazed, she didn't notice it at first.
+<P>
+Marlene looked down and screamed, a noise of such utter revulsion that Sera
+was taken aback, even as a numbness began to spread up her leg.
+<P>
+Then the simulagent, her eyes wide, teeth bared in revulsion, picked up one of
+the CVR boots Sera had been wearing and smashed it down at Sera's calf.
+<P>
+The gigantic timber rattlesnake released its hold and struck, but the boot
+came down again and again, as it writhed.
+<P>
+Sera watched, the realization coldly sinking in, her leg beginning to cramp,
+as the arm-thick reptile futilely tried to get out from underneath Sera's
+foot, rattling all the while.  
+<P>
+Then the armor came down one more time, and the viper's head exploded in a
+splatter of blood, bone and brains.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"Oh sh--" Marlene whimpered, forcing Sera down and making a dry retching noise
+as she violently kicked away the still squirming headless corpse of the snake.
+ She jerked up Sera's pant leg.  "God god god--"
+<P>
+Sera stared down, her heart thumping, as Marlene's attention revealed two
+puncture holes on her ivory skin, leaking green fluid.  The rattler had hit
+her just above the ankle, and had had several seconds to envenom the bite. 
+"That thing was huge.  How much poison did it have?"  She produced a small
+Swiss Army knife she had kept around for such purposes, snapping out the
+blade.
+<P>
+"What?"  Sera gasped.  Marlene did not even bother to respond; ripping off the
+bottom of her shirt with her penknife, she wrapped the tourniquet just below
+the Sulagi's knee.  Then she began.
+<P>
+Sera gritted in pain not from Marlene's knife incising her skin.  Already,
+agony was flaring from the wound as the poison began to work its way in.  Then
+the x-shaped slices in the bite marks were completed, and Marlene bent her
+head.
+<P>
+It was all she could do not to gag; Invid blood at the best of times smelt
+like rotting vegetation, and the taste was indescribable.  Still, she sucked
+and spat, working with ruthless vigor on the wound.  Marlene did not know how
+rattlesnake toxin would affect a Sulagi Invid, but with a human and a snake
+that size (<I>good god, it looked like a python!</I> Marlene thought.  <I>How
+couldn't have we seen it?</I>), the bite was very bad news indeed.
+<P>
+It might not kill her, but it was quite possible that without treatment Sera
+could lose her leg.
+<P>
+Marlene prayed to various deities as she continued to spit the vile stuff of
+Sera's blood out over and over.  At length, she stopped, feeling that she
+could do no more.  Already, Sera was gritting her teeth against the pain as
+the venom Marlene hadn't been able to remove worked its way out from the entry
+point.
+<P>
+Marlene sprang up and dashed over to the Cyclone.  Both of her prayers were
+answered; not only had Sera secured its cargo well, but in a couple minutes of
+frantic searching through her belongings, she found what she needed.  However,
+the amount of antivenin left in the vial was hair-raisingly low.
+<P>
+<I>I just hope it's enough.</I>
+<P>
+Sera whimpered as the simulagent injected the remaining antivenin into her. 
+Other than that, she made no response.  She was already gone into the world of
+agony her careless move had brought her. 
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+Night had fallen like a wet blanket, the only shining the tiny glow that
+Marlene permitted the lamp to emit.  It fell on a bundle of blankets and the
+shivering form therein.
+<P>
+<I>The antitoxin wasn't enough,</I> Marlene thought.  <I>If only that hunter
+hadn't gotten himself bitten two weeks ago...</I>
+<P>
+Marlene knew that even with the antivenin that there would be still some
+reaction; that much poison simply wasn't welcomed by the body.  But in the
+current situation, and considering her current patient, she was gravely
+worried, going on terrified.
+<P>
+Maybe the venom had a different effect on Sulagi after all, or the toxin had
+been more than anticipated, or she hadn't had enough of rattlesnake antivenin
+in her supplies to counteract it.
+<P>
+Sera had shown promising signs at first.  The swelling hadn't been great, and
+although the bite had been excruciating, it wasn't unendurable.  But in the
+time since, the ankle had ballooned, and Sera had lapsed into delirium. 
+<P>
+Now she lay shaking in blankets, muttering snatches of phrases in English,
+High Opteran, Zentraedi, and occasionally names; some that Marlene knew, and
+some she didn't.  Currently, Sera seemed to be under the impression that she
+was lying wounded on a battlefield fought some years ago when she'd been in
+command of a human group.
+<P>
+Marlene herself was in pain.  In terror that in her ravings her companion
+might attempt to contact loyalist patrols, Marlene had telepathically
+attempted to monitor Sera's mind to prevent such instances. Now she herself
+had beads of clammy sweat dewing her forehead.
+<P>
+<I>I can't keep this up much longer.  I can't.  If only there was a decent
+shelter, I could check up on Sera regularly, keep her comfortable.  But there
+isn't.</I>
+<P>
+<I>What if I sleep?  Oh god, what if she takes a turn for the worse...</I>  
+The possibility was more than she could bear.  
+<P>
+The thought of another Invid patrol she couldn't even contemplate.
+<P>
+<I>If only there was a shelter, and help...</I>
+<P>
+Cicadas screeched in their head-throbbing drone, and there was a hoot from
+within the woods--anyone's guess what that was.  There was the thick, heavy
+feeling of an incoming front in the air.
+<P>
+<I>Please don't let it storm.  Not on top of everything else...</I>
+<P>
+Hopelessly, she scanned the woods and paused, her eyes going wide.
+<P>
+<I>No--it can't be.</I>
+<P>
+Far off in the trees, about a mile or two--a small, yellow light.
+<P>
+It was undeniable.  The skies had gone overcast and there was no chance that
+it might be the moon or stars.
+<P>
+Marlene feverishly debated the pros and cons--she had no idea what the light
+was or who was making it, but the silence in her head proved that it was not
+Invid, or at least not loyalist.  She couldn't leave Sera, but at least she
+was showing no immediate change.  It could be Invid sympathizers, it could be
+friendly types, it could be Invid haters.  She might get lost en route, she
+might find important help.
+<P>
+At length, Marlene said a word Scott Bernard and her old companions would have
+found utterly shocking from her, and stood up.  Tucking the blankets around
+the fevered Sera, she picked up the lantern and began to make her way toward
+that tentative beacon.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+Marlene staggered at last out of the margin of the backwoods and into the edge
+of the yard, exhausted.  It had taken at least forty-five minutes for her to
+work her way through the thick growth, her eyes perpetually on that light; 
+even despite the care she had taken, she had gained her share of scratches,
+most of them on her hands and spots on her face smarted as well.   There had
+also been areas that without the lantern Marlene could have easily broken her
+ankle or a leg in.
+<P>
+In addition, she had had to orient herself using Sera's position.  The hurt
+from that combined with the chaos of Sera's hallucinations had made her into
+an automaton; but without, she would have become hopelessly lost.  Still, she
+was shaking and coated with clammy sweat from the experience.
+<P>
+But that was nothing compared to what she had yet to do.
+<P>
+Swallowing, she walked up to the porch of the small, unwhite-washed edifice,
+and set one booted foot on the boards.  They gave a chilling groan.
+<P>
+Immediately, the night erupted with the hysterical baying of a watchdog. 
+Marlene shrieked in terror, reflexively turned to run, and tripped.  Lying
+there in the damp grass, she waited for a set of salivating fangs to descend.
+<P>
+They did not come, although the racket continued from the other side of the
+house.  Blinking incredulously, Marlene looked up into the light.  She then
+realized the animal must have been chained in the back, and began to giggle
+hysterically.  She stopped as she realized that the dog's uproar had made the
+house's occupant or occupants stir.  Remembering herself, she got back to her
+feet, remembering at the last moment potential scratches, and raked hair over
+what might be the areas.  About that time, there was movement from downstairs,
+and a door banging open.  It was the back one.
+<P>
+"King, quiet!"  The voice was female, and melodious despite its firm tone, but
+the dog shut up. Biting her lip, the simulagent limped back toward the porch
+as the back door slammed.  About the time she'd reached the top, the door
+there had cracked open, revealing a figure with a flashlight.
+<P>
+"What?--who?" the occupant murmured.  Marlene licked her lips and thought of
+something to say with no success.  The door came open wider, and she blinked
+as the flashlight burned into her retinas. There was a murmured apology, and
+the light was lowered.
+<P>
+"Hello?  I'm sorry about that.   I--good God."  The woman's voice trailed off
+in shock.  Marlene swayed, trying to decide if it was my
+god-she's-bleeding-green shock or not.  She realized the light wasn't quite
+that strong yet.
+<P>
+Marlene tried to see it from the other's perspective: a pallid waif of a young
+woman in a threadbare orange canvas jacket, clothing dirty, tattered, and
+torn, wide amber eyes glazed and staring, long red hair all over kingdom come.
+ She must look like she'd been assaulted by a gang of thugs.   
+<P>
+Yes, there'd probably be a bit of sympathetic horror there.
+<P>
+"Are you hurt?" the other gasped, the sincerity of her tone removing the
+remainders of Marlene's apprehension.  Marlene, her eyes adjusted by now,
+could vaguely see a pretty and concerned face and short brown hair mussed with
+sleep.  She reminded her of somebody, somehow.
+<P>
+Marlene swallowed.  "No, not me--I don't need help.  But I've got a friend out
+there, who does..."
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"He's really a big sweetie," her companion said.  "Once King gets to know you,
+he's very affectionate."  The gigantic Newfoundland-Doberman mutt perked up
+his ears at his name and whined, then resumed his pacing alongside them.  "I
+live alone most of the time, so..."  She trailed off, as she followed
+Marlene's path.  "A ferocious dog usually scares off the majority.  And for
+the more unsavory types, such as frags, well, nobody knows I live out here
+anyway unless I let them."  
+<P>
+"That's dangerous," Marlene commented abstractly, hoping this was the right
+way.  "Don't you have anyone nearby?"
+<P>
+She said, "I had a husband, once..." trailing off.  "And believe me, King
+knows when there's a real threat."
+<P>
+"I'm sorry."
+<P>
+"It's been a few years.   It's nothing different from what anyone else has
+experienced."
+<P>
+<I>Scott,</I> Marlene said to herself, but kept private.
+<P>
+"Do you know where your friend is?"
+<P>
+Actually, Marlene did, but she hedged to allay suspicion.  "I think...Over
+there.  You're sure this is a better route?"
+<P>
+Her companion nodded, swatting at mosquitoes.   King was snuffling vigorously
+at the air, then whined and set off.  "King seems to have smelt her."
+<P>
+"Yes...  I hope we don't endanger you."
+<P>
+The wavy brown hair drifted with her headshake.  "I heard a bit of a clash
+earlier this afternoon.  I didn't know it was you two--I'd taken the dog down
+into the shelter with me.  It was over quickly however.  It's a good thing
+those types of Invid can't or don't understand human habitation."
+<P>
+Marlene nodded.  At least the dog hadn't taken any exception to smelling Invid
+humanoids or Invid blood, or things would have been uncomfortable indeed. 
+They might still--she had no idea how she was going to explain Sera's bite
+wounds.
+<P>
+<I>Maybe she's already seen my scratches.  But if she has--then why hasn't
+she...</I>
+<P>
+<I>Could she be a Rose member?  Should I--no, I can't risk it...</I>
+<P>
+"There it is!" she exclaimed, suddenly jerked back from her disconnected
+imaginings.  She stepped forward.
+<P>
+The dog sniffed the bundle of blankets, which moaned.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+She paced nervously through the hive corridor, trying to figure out what was
+wrong.  Or was it a fallout shelter?  She couldn't make up her mind; it seemed
+to shift whenever she tried to concentrate on it. But she was fairly certain
+that directional signs in English didn't hang in Invid hives, nor should water
+pipes protrude from dark red, organic walls.  She stared around, confused and
+worried.  Her leg seemed to be aching in a glassy way, and she shook her head
+in an effort to make things fall into place.
+<P>
+Wait--what was with her hair?
+<P>
+She couldn't feel the now familliar weight of the upsweep on her scalp. 
+Somehow, it seemed to be undyed, its native apple green color in a short,
+spiky affair save for the lengths in front of her ears that came to her chin. 
+And down there--she made a sound of disbelief at the pink, black and purple
+swathes of not-quite-cloth that clung to her slender body.
+<P>
+What was going on, that time had been reversed on her?  And yet again she
+kinesthetically felt a nape-length bob and the weight of CVR armor.  You
+couldn't feel both at the same time, could you?  And there was that pain
+distantly throbbing like a white-hot poker in her ankle and naked confusion
+muddling her thoughts.
+<P>
+A scornful, unknown, but familliar laugh behind her.  She whirled and saw
+nothing, the place going dark around her.
+<P>
+"Who's there?" she asked, her eyes darting around.  There was no answer.  "I'd
+like to know the people making fun of me.  I can't say I enjoy the situation
+myself."
+<P>
+"What?  No greetings to the family?"  She went into a crouch, breathing hard,
+still finding it strangely hard to concentrate.  "I'd have thought better from
+you, seeing how noble you were at Refles Point for the sake of a few humans."
+<P>
+"My friends now," she shot back.  "I suppose you don't know the concept,
+whoever you are.  The Invid never believed in much outside Hive-loyalty. 
+Pity.  It might have saved some needless identity conflicts."
+<P>
+Frankly she wouldn't have minded the voice's owner being her Mother, if only
+for the sake of giving Her a piece of her mind.  Her impression, though, was
+that the mocker seemed to be the wrong gender. Gritting her teeth in
+frustration, she sat Indian-style on the floor, ignoring the voice with vigor.
+ In order to occupy herself, and perhaps annoy the taunter, she thought of
+things from the intervening years.  Rook and Rand's marriage, Annie's first
+attempt at a garden (rabbits ate the carrots), the hundred and one facets from
+leading a group of resistance in Colorado, the night she and Lancer had...(no
+not that, what had been joy then was only rending pain now in its place).
+<P>
+"You chose to be human," the voice pointed out, directly behind her.  She
+flinched but did not move. "What you see with those pathetic ape-descents is
+beyond my comprehension, but the Hive was there for you.  You chose to reject
+the Invid.  It rejects you, if you're that fond of them."
+<P>
+"After seeing what the Invid's done to them these days, I have to think
+Humanity has a point."  She gnawed on a finger, tormented by that
+naggingly-familliar and unpleasantly-related voice.  She could not bring
+herself to turn around, though, and give her tormentor the satisfaction of
+reacting.
+<P>
+"How about what you've done to the Invid, eh, sister?"
+<P>
+"This world has taken enough abuse!" she snarled back at last.  "Optera may
+have been turned into a wasteland, but these people have had to endure in all
+innocence four invasions now and have their planet raped because they were in
+the way."  She never liked guilt, but it was raising its ugly head again; she
+knew she was partly culpable for both races' suffering.   
+<P>
+She forged ahead nonetheless.  "And I can't say I precisely appreciate the
+Regis' convenient amnesia about leaving the Earth alone when it didn't suit
+Her.  There are some things that need to have justice delivered for, and some
+people that deserve protection, even if," her voice caught, "the price is that
+high."       
+<P>
+"Eighty-seven Invid worth?  Quite high, I have to say."
+<P>
+She stiffened as though electrified.  "How do you know?"
+<P>
+"How shouldn't I?"  There was a hand placed on her shoulder, the shoulder that
+alternated between flightsuit and CVR-4 alloy at will, and she could stand it
+no more.  She turned.
+<P>
+And gasped in disbelief.
+<P>
+The green-uniformed, cerulean-haired young man there grinned wolfishly; his
+narrow, sharp features  predatory in aspect, his eyes nowhere near human or
+humane.
+<P>
+"Surprised, sister?"
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"COOOOORRRRRRRRRGGG!!!"
+<P>
+Sera's scream of rage caused the dog, crouched near the door, to leap up and
+go into a frenzy of barking.   His mistress snapped at him and he shut up,
+whining, his tail wagging in worry.  The two women stared at each other over
+the prone Invid's body, their hearts still galloping with the shock.  They
+then came back and tried to pin down Sera, who had decided to start struggling
+against whatever had caused that incredible fury.  Her voice came loud and
+clear.
+<P>
+"Bernard killed you, you bastard!  I felt you die!  Why don't you stay dead,
+Mother damn you?!  I'll bloody well finish the job!"  
+<P>
+Marlene gritted her teeth, trying to deal with the writhing Sera's arms and
+upper body, which bucked in her waking dream.  For a woman of her light build,
+Sera was strong.  On the other end, Mrs. Maxwell was gritting her teeth as she
+dealt with Sera's jacknifing legs.
+<P>
+"Great!"  Marlene gasped.  "Now she turns violent!"
+<P>
+"Who's she--"
+<P>
+Marlene shook her head.  "Considering who he was, I think she's got reason to
+turn violent."
+<P>
+Panting, Sera eventually subsided.  "You motherless son...  You've got the
+nerve to haunt me?" The crimson eyes were open, causing Maxwell to gasp in
+shock.  However, the irises were tracking nothing in the room.  Weakened by
+the venom and her earlier fight against the Scouts, Sera's fight had run out
+quickly.   "Speaking of making your own bed, Corg, I'd hoped you ROTTED."  Her
+head fell back as she dropped back into the deeps of hallucination.
+<P>
+Maxwell was still staring down at the body on the bed, the whites visible
+around her green eyes.
+<P>
+"Is she--"
+<P>
+"She is.  But she's on our side," Marlene said, pleading.  "She's hurt--we're
+hurt, and they're after us."
+<P>
+Maxwell stared at her, then, before Marlene could react, swept aside a
+concealing strand of red hair, revealing one of the smarting places on her
+face.  "You're one too."
+<P>
+"I didn't enjoy knowing about it!" the simulagent shot back.  In that moment
+of fear, Marlene hadn't realized until a couple seconds later that there was
+no loathing on the other woman's pretty but sorrow-worn face.  She blinked,
+confounded, and was answered with a tired smile.
+<P>
+"Do you think I'd kick out you when you needed help, just because of your
+blood color?"  Her savior shook her head.  "You're not the first I've met,
+Marlene, and neither is Sarah down there." Her eyes indicated the softly
+moaning figure on the bed, whom Marlene had gifted with a quick pseudonym. 
+"She's hurt, you're both exhausted, and I used to work with the resistance
+back in the last war.  Besides, this war seems to have created quite a few
+conscientous objectors among your race."   She bent back down to place on
+Sera's leg the first of several ice-packs she had brought from the cellar. 
+"Now help me do something about the swelling in her leg before it gets damaged
+any further. "
+<P>
+Marlene nodded and went into the other room to get the supplies they'd
+gathered, leaving the patient and her nurse together.
+<P>
+She sucked on her lip and looked down at the puffy, swollen leg, the puncture
+marks an ugly blackish-green.  "Well, let's see if icing it helps keep it
+down, Sarah..."
+<P>
+The patient whimpered something.   Brows puckering, she bent down to comfort
+the woman, her fingers touching her clammy forehead.  There was a trace of
+tears on Sera's lashes, and she murmured again, one word becoming coherent.
+<P>
+"...Lancer?" she whispered.
+<P>
+The fingers dropped, the face above it gone still and white.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"You done burning it yet?"  Annie teased.  Sticking a finger in the water, she
+playfully flicked it in the direction of the big, thickly-sideburned man
+making pork barbecue in a large kettle.  He grinned and continued stirring. 
+Over near him a wide-band radio was hissing out crackly communication.
+<P>
+<I>Lunk?  What was Jim doing in a hive,</I> Sera thought, dazed.  Wait, it
+wasn't in a hive, and her dead twin's ghost had quit tormenting her.  Too, her
+clothing seemed to have settled down.  She looked down, seeing a knit top and
+jeans.  Something about the colors was ringing alarm bells--she remembered it,
+knew something dreadful about it, but she seemed to be confused and couldn't
+remember.
+<P>
+Over at the sink, Rook, Rand and Ariel seemed to be tormenting each other
+unmercifully on their vegetable-washing skills, or rather it was Rook and Rand
+torturing each other (humans had such STRANGE courtship rituals sometimes) and
+Ariel looking on and giggling like an idiot.  
+<P>
+(Actually, the High Opteran name was closer pronounced as <B>Ar'yuel</B>, a
+title denoting stealth and reconnaisance as well as numerous other telepathic
+connotations attached to it.   The humans had misinterpreted it as the name of
+a spirit in one of their plays.  It was a moot point, though, since the
+subject had insisted loudly and at length she should be called that human
+name, Marlene.  Sera kept forgetting, though.)
+<P>
+<I>I remember this, don't I?</I>  Sera thought.  <I>What's going on?</I>
+<P>
+"Hmph, what's taking Tomato God so long out in the garden?"  Rand wondered
+loudly.
+<P>
+"Tomatoes, stupid."  Rook elbowed him in the side, while Marlene raised her
+eyes in plea.  "You seen how many those damn plants are putting out?  Must be
+that Montana soil."
+<P>
+"Coming!" a new entrant singsonged, grunting as a bushel filled to the brim
+was navigated around the door.  Sera looked on, smiling.  "Oi, my back."  The
+man who had once posed as the Americas' most popular female singer winced and
+grinned at the gathering, his lavender-tinted hair in his eyes.  "I suppose
+nobody's thrilled by the idea of cooking up some tomato paste?"  The blue eyes
+met the red over the table in unspoken intimacy.
+<P>
+Ignoring the warmth in her face, Sera said, "Not unless we love the idea of
+doing it for a week, thank you, Lancer."  He grinned.
+<P>
+"Touche."  
+<P>
+"Taken.  Any corn?"
+<P>
+"Past peak, I'm afraid."  Sera shrugged.  He got a chair and sat.  After a
+moment, she wandered over and leaned on the back of it.
+<P>
+She genuinely felt much better about her state of exile when he was around;
+she remembered just why she had elected to leave the collective, why she no
+longer could remain purely Invid.  She hadn't been able to from the moment
+he'd dragged her by the ankles into three feet of water.
+<P>
+Although in the past couple of months their relationship had gone to an
+entirely new level--she felt her face heat again invisibly under her capillary
+coloration--it had a gentleness and companionableness to it.  Lancer knew full
+well she still wasn't completely comfortable with the alien flesh and urges
+she'd been given, and had treated her accordingly.  The wonderful--and
+frightening--realization was that she could no longer conceive of life without
+him somewhere in it...
+<P>
+But something was wrong.  She'd experienced this before, hadn't she?  And
+there was this pain in her ankle... but the play kept on, even as she was an
+unwilling player.
+<P>
+"I heard that, Rand," Lancer drawled.  "You want to be appointed Dead Mammal
+God, I suppose, o great rabbit hunter?"  Rand bronx-cheered back at him, and
+Rook punched him on the arm.
+<P>
+"Dead Rotted Mouse God, Lancer," she snorted.  "He found that nice putrid one
+up in the flue, didn't he?  The one that was stinking up the place?"
+<P>
+"Ewwwwww!"  Annie interjected.  "Totally gross.  I mean, I wouldn't have
+wanted to touch that with a..."
+<P>
+There was a crash from the stove.  Lunk was standing stock still, the ladle
+dribbling onto the heating coil and stinking.  He didn't notice.
+<P>
+When Marlene moved at him, he hissed, "Shut up!"  A deathly quiet fell over
+the gathering, broken only by the staticky hiss of the ham radio.
+<P>
+<I>"...it was found on the margins of a farm in the area.  We observed it for
+an hour or so, before it was done with  whatever it was doing and took off. 
+When we inspected the area where it'd been, we found Flowers of Life had
+somehow sprouted there.  They were about a couple weeks old."</I>
+<P>
+<I>"You mean you saw an Invid Shock Trooper in the area?"</I>
+<P>
+<I>"Affirmative.  God help us..."</I>
+<P>
+A fork clashed onto the ground, as Rand forgot his grip.  No one seemed able
+to speak, save for Marlene's whimper of fear.
+<P>
+Sera and Lancer stared at each other in horror, as the implications sank in,
+and as Sera-the-observer finally realized at last, the implications.
+<P>
+<I>No!  Not that again!</I>  She ran from the memory, through disconnected
+images and memories, some of them containing the ancient racial memory of the
+Invid, some from her time on Earth.  Then the scene settled at last as
+something she'd rather forget.
+<P>
+"No," she said.  "You're just a memory.  Maybe not a dead memory, but a memory
+all the same."
+<P>
+The tall, lavender-haired man looked like her lover, but with one important
+difference.  The fire, the spark of life that had buoyed him though years of
+devastation, and that had made Lancer Lancer was gone. They stood alone on
+blankness, wearing CVR, and she watched the slump-shouldered automaton look
+down at the ground, avoiding her gaze.
+<P>
+"No, damn you!  Fight!" she cried.  "You convinced me, didn't you?  There has
+to be another way out of this too!"
+<P>
+He heaved a sigh, his hollowed eyes glazed.  "Sorry, Sera...I can't...I'm so
+tired, and nothing seems to make a difference anymore..."
+<P>
+"It used to!" she hissed.  "Curse you, if you roll over and die, Lancer,
+you'll be obliging the Invid anyway.  At least you can make them choke, can't
+you?!"
+<P>
+"It didn't make a difference with Kosmas, did it?"  He shuddered.  "The Invid
+have got human help anyway...  We're too self-interested a race, Sera, can't
+you see?  They'll just look out for their own best interest, and if it means
+cooperating with the Invid, so be it.  They never realize that it could be
+different, and they don't care, anyway.  Are we even worth saving?"
+<P>
+"I thought so," Sera insisted.  "Dammit, Lancer, I love you.  That's the plain
+truth of it.  If you leave, are you going to leave me to fight alone after you
+changed me like this?  Because that's just what I'm going to do.  I love you,
+you idiot, but I can't join you if you choose lying down.  Make up your mind."
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"...make up your mind..." she whispered.   
+<P>
+Her face sunken with affliction, Sera had nonetheless calmed down.  Mrs.
+Maxwell checked her leg and noticed the puffiness from the venom going down at
+last.  Whatever was in Sera's hybrid biology had begun to retaliate against
+the substance damaging it.  From the look of things, Sera was now on the edge
+of a peaceful rest and out of danger.
+<P>
+Marlene had sat down on a blanket to rest and had ended up curled up on it, in
+the comatose sleep of the exhausted.  Their host had not awakened her, deeming
+it the kindest course.  
+<P>
+Maxwell stood up, stretching, and sighed.  The packs ought to keep at least
+until morning, and she herself was blank with fatigue.
+<P>
+She walked over to a window and looked out into the lightning-flickered
+darkness, seeing King pace on his chain and the fitful whooshes of the wind as
+the storm advanced.
+<P>
+As the lightning flashed again, it illuminated her face as she bit on her
+finger, her eyes silvered with tears.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+The storm roared through that night and dawn with an elemental savagery not
+rivaled by anything else of Earth, shuddering the suddenly-fragile walls,
+making the dog cringe in his dry kennel.   Even the Invid in the hives on the
+storm front hid; the gusts were so ferocious that they could smash Scout and
+Trooper carapaces like eggshells into the ground.  The Invid controlled the
+world, but there were powers in nature even they knew well enough to bow to.  
+<P>
+Neither the two Invid nor the one human, insensible in sleep, noticed it.
+<P>
+The storm's brutality was also hand-in-hand with its abruptness.  In the space
+of three and a half-hours, it had blasted through, leaving at the end only
+tattered, patchy clouds and the suggestions of the far-distant stars blinking
+though the open areas.  
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+When the skies lightened with dawn, the apricot light of the new sun was able
+to squeeze through the clouds, and off the droplets on the wet grass.
+<P>
+The eyelids fluttered and opened, the gentle copper of the early day lying
+across them and striking fire from the carmine irises they had hid.
+<P>
+"Ugh," she grunted as she felt the unfamiliar cushion.  "Where'm I?"
+<P>
+She tried to lift her head and found that while she could do it, it took a
+great effort.  She felt like she had been put though a mangle.  Her eyes
+flicked down and noticed her numbed foot.
+<P>
+"Goddess of th' friggn' Hive," she murmured, as the memory hit her.  Her head
+plopped back down.
+<P>
+She attempted to fork through a muddle of images and lost.  Where had she
+been?  Some of the things she remembered were murky, didn't fit...
+<P>
+While thinking, the doorhandle turned and opened.
+<P>
+"There you are!  Morning."
+<P>
+"Ugh?"  Sera inquired intelligently, dragging an arm up to wipe away sleep.
+<P>
+The attractive young human woman smiled at her, eyes warm.  Sera remembered
+her from a couple of disconnected lucid moments last night.   "I didn't think
+you'd awaken that early, considering what you'd been through, but just as
+well.  I've been cooking breakfast."
+<P>
+"Mnnh."  The smell suddenly hit Sera's olfactory nerves in one concerted blast
+and it was all she could do not to disgrace herself by drooling.
+<P>
+"Your foot's obviously been better, but it looks like it's recuperating nicely
+despite that venom. You'll definitely keep it in fine condition.  Whatever
+else your race has, a sound constitution seems to be one of them."
+<P>
+The implications hit the other woman and she darted a horrified glance down at
+the iced appendage and then at her hostess, who shook her head, smiling.  Sera
+looked flustered.
+<P>
+"Well, frankly, Sarah--if that's your actual name--it doesn't take a look at
+that bite to see what you really are.  Those eyes aren't common even among
+Zentraedi.  And your friend admitted both of you were Invid."
+<P>
+"Well, you can't believe everything the conventional wisdom says," Sera said a
+bit sharply.  "That and I'm amazed Marlene even admitted to it.  She's got a
+hangup in that area."  She shook her head.  "Ow." Half remembered pictures
+picked at the corners of her mind, causing severe upset.  How much had she
+been ranting last night?...  <I>Please don't let her know everything, for
+mother's sake...if she knows about my relationship to the others, my own role
+in the last war, then it's another lead for the Invid to wipe us out with.</I>
+<P>
+Her concentration, already spotty with hunger, finally switched to the problem
+of appeasing it. Unthinkingly, Sera rolled off the bed and tried to stand up,
+her leg almost buckling under her before she was supported by her arm slung
+around the other woman's shoulder.  She blinked, clad in little else save a
+shirt and underwear and a bit confused.
+<P>
+"Watch it!  What are you thinking to get up this quickly?"
+<P>
+"Hungry."  Sera said shortly.  "Sorry about that, my gut got in the way."
+<P>
+"Well, it should be about ready.  Before it burns, let's take care of it."
+<P>
+Sera hopped awkwardly over with Mrs. Maxwell's support to the door. 
+"Marlene?"
+<P>
+"Still asleep.  She was just as exhausted as you.  Do you realize what she
+risked to save you?"
+<P>
+The Invid winced.  "No.  I do now."  A flush of embarassment hit her; it was
+her own stupidity, after all, that had led them to this pass.  "Let her have
+some rest.  She deserves some after all the dragging around I've been giving
+her."   She quit hopping and put the foot down; considering what had happened
+to it, it was taking her weight suprisingly well.
+<P>
+"Don't do that!" Maxwell said.  "Tissue damage."
+<P>
+"It'll live."  Sera grinned, liking this woman, who'd been more concerned with
+injury to her patient than the race of the patient herself.  Pity to have to
+leave here so soon, but the loyalists wouldn't be that understanding...
+<P>
+"Well, that's surprising good news," the sweet voice countered with some
+asperity, "considering there were a few points last night when I had my doubts
+about the rest of you."
+<P>
+Sera was chuckling ruefully as she closed the door behind.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"No, really, Marlene, what was I saying last night?"  Sera leaned foward, her
+foot propped up, a cup of hot green tea between her hands.  It had been
+Lancer's favorite kind; Sera was gratified to find a stock of it.  Over the
+steam, she gave a pleading glance over at the other.
+<P>
+The simulagent sniffed in mock-disgust.  "You actually got my name right." 
+She shook her head, her fine, waist-length auburn hair flowing unbound in the
+breeze.
+<P>
+"Please.  I'm concerned.  I don't want her to pay the price for our loose
+lips."
+<P>
+The two were seated on the large back porch of the house.  The ex-princess
+royal had coopted the swing and a stool for her foot; the simulagent was
+percariously perched on the walls encircling the area. Beyond, in the yard,
+the bent-over figure of their helper could be seen puttering in the garden. 
+<P>
+Marlene looked at her and shugged.  "All right.  You might not like it."
+<P>
+"I remember enough to know what I'll probably not like.  Out with it."
+<P>
+"You were screaming your head off about Corg.  We had to pin you until you
+calmed down."
+<P>
+Sera looked grim.  "Figures.  I remember something about an intense desire to
+rearrange his face. Odd that I didn't have that urge back when he was
+available."  
+<P>
+"And Lancer."
+<P>
+Sera looked grimmer.  "How symnetrical.  My demon on my left, my angel on the
+right, as the humans say, even though he gave up the position."
+<P>
+"Sera, he went through more than many people do in his life.  Even he couldn't
+keep doing it forever."  Unspoken, Marlene's own constant hurt, the pain of
+Contact, her identity unknown and her love missing...
+<P>
+Sera blinked rapidly.  "I know.  I know.  But I don't feel it, that's my
+problem."  
+<P>
+Marlene placed a hand on hers.  "Sera.  You do feel.  Or else you wouldn't be
+as angry at him." Sera started, her eyes on Marlene's sincere amber ones. 
+Marlene nodded.  "Maybe that's why I keep...denying...myself.  Because deep
+down..."
+<P>
+Sera shook her head, the fake brown fluffing out.  "Yes and no.  You taught me
+that, years ago--we can choose.  We're what we want ourselves to be."  Marlene
+nodded, reluctantly.  "Do you remember anyone else?"
+<P>
+"Not that I knew.  Well, pieces of your leading that resistance group, but
+nothing of the others besides Lancer."
+<P>
+"Thank Spirit of Light for small favors."
+<P>
+"So what do you think we need to do?  We can't stay here very long, of course,
+but your ankle..."
+<P>
+"Actually, I was  planning to leave here later today, tomorrow at the most."
+<P>
+"Sera, you got bitten by the largest snake I'd ever seen in my life yesterday!
+ Are you insane?"
+<P>
+"No, just being me.  Bad enough.  But just because I was a fool doens't mean
+the loyalists have stopped looking for us.  If we've got to get killed, let's
+not take her with us.  At least the James Gang further up in the Ozarks has
+signed on for the slaughter.  We have to move.  That's all there is to it."
+<P>
+Marlene's pale, delicate face froze in shock, and she slowly nodded.
+<P>
+"Besides..."  Sera trailed off, but Marlene could follow her thoughts even
+without telepathy. Perhaps we could find the others.  Perhaps...there had been
+that mess out in the West Coast a couple years ago, with rumors of it
+coordinated by a lavender-haired man, grayer and sadder than before, but with
+spine-tingling familliarity to his description.  Could Lancer have regained
+that fire?...  Only looking and running would help confirm the guesses and the
+rumors--and perhaps together with their comrades, they could find the key to
+end this dirty sibling to the last Invid occupation... 
+<P>
+"Do you think her knowing what she does about us'll make her vulnerable?" 
+Sera spoke again after a few minutes.
+<P>
+Marlene looked over at the woman in the garden.
+<P>
+"I don't think so.  I certainly hope not."
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+"Thank so much.  But I don't think it'll give me too much trouble.  I'm not
+walking on it, understand."
+<P>
+"Well, for goodness sake, at least take some supplies."  King paced snuffling
+around Mrs. Maxwell's feet as she imposed a large bundle of goods on Sera,
+who'd obviously seen better days.  Sera looked befuddled, but accepted and
+stowed it in the carrier when the human woman started to look obstinate. 
+"This will keep you two from haivng to go into any unfriendly towns for at
+least several days."
+<P>
+Sera stared at her, ruby eyes blinking rapidly.  "Just one question--why?"
+<P>
+The human's eyes flicked downward, then back up.  "Why?  Just because.  Some
+things you can't rationalize."  
+<P>
+Marlene left the house then, and moved over to them.  As she passed their
+hostess, her fine brows puckered and she began to stare intently.  The other
+woman blinked back, then began herself to stare very hard at Marlene.
+<P>
+Sera looked on, completely confused.
+<P>
+<I>Is there something I'm missing on here?</I> she thought.
+<P>
+"Um..."  Marlene thought after a second.  "Do I know you?  You look..."
+<P>
+Mrs. Maxwell answered quickly, flushing. "What?  No, I don't think so.  You
+could be confusing me with somebody else."
+<P>
+Marlene blinked, then shook her head.  "Probably.  Heaven knows my memories
+aren't that good."
+<P>
+"Well..."  Sera said at last, "I suppose you should take care.  Perhaps we'll
+meet after all this is over without this ridiculousness.  Our relatives might
+make a house call--" lopsided grin, Marlene making a face, "which is bad for
+all involved.  And don't worry, I WON'T walk on it."
+<P>
+"I'll make sure of that," Marlene challenged.  The two Sulagi glared at each
+other.
+<P>
+There was a final round of farewells.  Sera gunned the engines on the Forager
+as Marlene seated herself and put on her goggles, and the two pulled down the
+overgrown track; lost to sight at the first turn, and to hearing within
+minutes.
+<P>
+King shoved at the limp hand with his nose and whined; automatically, it began
+to scratch behind his ears.
+<P>
+In the lightened breeze of the cooler post-storm weather, the brown waves of
+her hair stirred, held back by a simple headband.  Still, for several minutes,
+the woman's slender figure stood motionless, staring in a direction, the
+afternoon sunlight shining off finally-shed tears that weren't entirely
+regret.
+<P>
+She knew why she'd seen that deceptively fragile-looking redhaired young woman
+before.  And that gallant, conflict-stricken Invid shared a kinship with her
+that fates willing she would never discover.
+<P>
+<I>I know why, Lancer,</I> Carla Maxwell thought.  <I>I know why.</I>
+<P>
+Turning, she went back inside the house.
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<P>
+<CENTER>
+<IMG WIDTH=234 HEIGHT=288 BORDER=2 SRC="/web/20120201115541im_/http://www.steelfalcon.com/TIW/Images/seramarlene2.gif">
+</CENTER>
+<P>
+<HR SIZE=5 WIDTH=50% ALIGN=CENTER NOSHADE>
+<HR SIZE=5 WIDTH=40% ALIGN=CENTER NOSHADE>
+<HR SIZE=5 WIDTH=30% ALIGN=CENTER NOSHADE>
+<HR SIZE=5 WIDTH=20% ALIGN=CENTER NOSHADE>
+<HR SIZE=5 WIDTH=10% ALIGN=CENTER NOSHADE>
+<P>
+<HR>
+<H2>GLOSSARY</H2>
+<DL>
+<DT><B>ANTON KOSMAS</B>
+<DD>An ex-officer of the E.B.S.I.S. (Eastern Bloc Soviet Independent State)
+who became the first human to ally himself with the returning Invid during the
+Third Invid War.  As part of his agreement with the Invid, he betrayed Rook,
+Lancer, and their friends and led them into an ambush.  The heroes survived
+the attack, but agreed to break up and go their separate ways afterwards for a
+variety of reasons.  Kosmas was later killed by resistance fighters after he
+fell into disfavor with the Invid.
+<P>
+<DT><A HREF="./attackscout.html"><B>ATTACK SCOUT</B></A>
+<DD>A new mecha used by the Invid that replaced the older Scout and Armored
+Scout designs used during the Third Robotech War.  The new mecha design puts
+an emphasis on speed and heavier armor while sacrificing agility.  Attack
+Scouts are piloted by <I>Iigaari</I>, the least evolutionary advanced drone in
+the Invid hive race.
+<P>
+<DT><A HREF="./frags.html"><B>FRAGS</B></A>
+<DD>A slang term for humans who are working for the Invid, for personal
+profit, power, protection, or any number of other reasons.  Frags are
+notorious for rooting out members of the terran resistance and their allies
+and handing them over to the Invid for extermination (or worse).
+<P>
+<DT><A HREF="./newOCCs.html#renegade"><B>SULAGI</B></A>
+<DD>The Invid name for members of their race that have been evolved into a
+humanoid form.  Many Sulagi are unhappy with the second Invid invasion of
+Earth, and some have even defected to join the humans in their struggle. 
+<P>
+<DT><A HREF="./vr135.html"><B>VR-135 FORAGER</B></A>
+<DD>A second generation cyclone design, developed on Tirol after the Third
+Robotech War and shipped to Earth in large numbers after the Invid returned. 
+The most impressive aspect of the new cyclone designs is the replacement of
+the backup internal combustion engine with a fusion generator, which provides
+dramatic increases in the power available when the protoculture cells are shut
+off.  Designed specifically for Veritech pilots shot down during combat, the
+Forager is highly sought after by the resistance for its durability and ease
+of repair.
+<P>
+<DT><B>THE WHITE ROSE</B>
+<DD>A secret network of Sulagi (humanoid Invid) that have defected from the
+Invid forces, and the humans that protect them.  The White Rose works to help
+the terran resistance by keeping human fighters informed on new developments
+and troop movements among the Invid occupation forces.  However, members of
+the Rose are in constant danger, as the Invid forces have begun a vicious
+campaign to root out and exterminate the renegades at any cost.  The name of
+the resistance group has historical significance; the original White Rose was
+a group of German students who circulated anti-Nazi propoganda, and who
+eventually paid for it with their lives.
+</DL>
+<P>
+<IMG SRC="./Images/navbar-reunion.gif" 
+ ALT="THIRD INVID WAR: THE REUNION" 
+ ALIGN=left WIDTH=383 HEIGHT=20 BORDER=0 VSPACE=0 HSPACE=0>
+<IMG SRC="Images/navbar-end.gif" 
+ ALT="Next  Previous  Top  Index" USEMAP="#navmap"
+ ALIGN=right WIDTH=203 HEIGHT=20 BORDER=0 VSPACE=0 HSPACE=0>
+<IMG SRC="Images/navbar-filler.gif" 
+ WIDTH=100% HEIGHT=20 BORDER=0 VPSACE=0 HSPACE=0>
+<BR CLEAR=all>
+<P>
+<ADDRESS><B>AMY BORDEN</B></ADDRESS>
+<ADDRESS>University of Illinois, Champaign</ADDRESS>
+<ADDRESS>Graduate School of Library and Information Science</ADDRESS>
+<ADDRESS><A HREF="mailto:borden@alexia.lis.uiuc.edu">
+borden@alexia.lis.uiuc.edu</A></ADDRESS>
+<MAP NAME="navmap">
+<AREA SHAPE=rect COORDS="0,0,45,20" HREF="./Dandelions/index.html">
+<AREA SHAPE=rect COORDS="46,0,115,20" HREF="./leviathan.html">
+<AREA SHAPE=rect COORDS="116,0,150,20" HREF="/thirdinvidwar.html">
+<AREA SHAPE=rect COORDS="151,0,200,20" HREF="/index.html">
+</MAP></BODY></HTML>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="/web/20120201115541js_/http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="/web/20120201115541im_/http://visit.webhosting.yahoo.com/visit.gif?us1328097341" alt="setstats" border="0" width="1" height="1"></noscript>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 11:55:41 Feb 1, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:16:06 May 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
